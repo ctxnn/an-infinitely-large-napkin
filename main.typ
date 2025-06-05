@@ -90,9 +90,32 @@ Several hints and solutions can be found in Appendices B and C
 \
 
 
-1. == Groups 
+ == 1. Groups 
 
 A group is a pair $ G = (G, star)$ consisting of a set of elements G, and a binary operation $star$ on G, such that: 
 \
 
-- G has an identity element 
+- G has an identity element $1_G$, with property that 
+$
+  1_G star g = g star 1_G, "where" g in G
+$
+- The operation is associative, $(a star b) star c = a star (b star c)$
+- Each element $g in G$ has an inverse, that is, an element $ h in G$ such that 
+$
+  g star h = h star g = 1_G
+$, the above line means $->$ $"for every a" in G, "there is an" a^-1 in G "such that" a dot a^-1 = 1_G$
+
+It is not required that $star$ is commutative, so we say that the group is *non-abelian*, if the operation is commutative then the group is *abelian*
+\
+
+The main for properties of group are 
+  + Closure 
+  + Associativity 
+  + Identity 
+  + Inverses 
+
+Some non-abelian examples: 
++ General Linear Group - $("GL"_n (RR), times)$
++ Special Linear Group - $("SL"_n (RR), times)$
++ Symmetric Group - $("S"_n, circle)$
++ Dihedral Group of order 2n - $D_"2n"$
