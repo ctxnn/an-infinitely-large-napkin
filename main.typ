@@ -48,6 +48,8 @@
 
 #set page(header: none, margin: 1in)
 #set text(size: 15pt)
+//#set text(align: justify)
+
 
 
 = Some Pre-requistes
@@ -119,3 +121,35 @@ Some non-abelian examples:
 + Special Linear Group - $("SL"_n (RR), times)$
 + Symmetric Group - $("S"_n, circle)$
 + Dihedral Group of order 2n - $D_"2n"$
+  - reflection 
+  - rotation 
+  - ex $->$ $"rs" "not equal to sr"$ 
+
+#note("a trivial group is group with only an identity element, often denoted with 0 or 1, we will denote it as {1}" )
+
+
+==== *isomorphisms*: 
+
+let $ZZ$ = {$dots$,-2,-1,0,1,2,$dots$} and $10ZZ$ = {$dots$,-20,-10,0,10,20,$dots$}
+
+these are different, but they only differe in the names of elements 
+
+formally, 
+$
+  phi:ZZ->10ZZ "by" x -> 10x
+$
+in symbols, 
+$
+  phi(x + y) = phi(x) + phi(y)
+$
+
+that's all just formalism for capturing the obvious fact that $(ZZ,+) "and" (10ZZ,+)$ are the same thing
+
+Let $G= (G,star) "and" H = (H,*)$ be groups. A bijection $ϕ: G→H$ is
+called an *isomorphism* if
+$ϕ("g1" star "g2") = ϕ("g1") * ϕ("g2") "for all" "g1,g2" in G.$
+If there exists an isomorphism from G to H, then we say G and H are isomorphic and
+write $G approx.eq H$, that means they both share same properties related to their structures 
+
+*btw ϕ = $phi$ *
+
